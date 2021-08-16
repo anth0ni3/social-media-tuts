@@ -1,0 +1,38 @@
+@media only screen and (min-width: 1024px) {
+
+    .container {
+        min-height: 100vh;
+    }
+
+    .contained {
+        padding: 2rem 8rem;
+    }
+    .heading {
+        display: grid;
+        align-content: center;
+        grid-template-columns: 1fr 180px;
+        height: 30vh;
+    }
+    .heading-text {
+        padding-bottom: 0;
+        margin-bottom: 0;
+        border: 0;
+
+    }
+
+    .big-cards {
+        margin-top: -90px;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 25px;
+    }
+
+    .mini-cards {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 10px 25px;
+    }
+
+
+
+9

@@ -1,0 +1,276 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+    line-height: 1.5;
+    font-weight: 700;
+    font-size: 14px;
+}
+
+.contained {
+    padding: 1.8rem;
+}
+
+/* font */
+h2 {
+    font-size: 30px;
+}
+
+h4 {
+    font-size: 18px;
+}
+
+.top span {
+    font-size: 18px;
+}
+
+/* colors */
+
+.up {
+    color: hsl(163, 72%, 41%);
+}
+
+.down {
+    color: hsl(356, 69%, 56%);
+}
+/* modes */
+/* light */
+.lightmode.mainbg {
+    background-color: hsl(0, 0%, 100%);
+}
+.lightmode.topbg {
+    background-color: hsl(225, 100%, 98%);
+}
+.lightmode.cardbg {
+    background-color: hsl(227, 47%, 96%);
+}
+.lightmode.grad {
+    background-color: hsl(228, 12%, 44%);
+}
+.lightmode.ltxt {
+    color: hsl(228, 12%, 44%);
+}
+.lightmode.dtxt {
+    color: hsl(230, 17%, 14%);
+}
+
+
+/* dark */
+.darkmode.mainbg {
+    background-color: hsl(230, 17%, 14%);
+}
+.darkmode.topbg {
+    background-color: hsl(232, 19%, 15%);
+}
+.darkmode.cardbg {
+    background-color: hsl(228, 28%, 20%);
+}
+.darkmode.lbg {
+    background-color: hsl(228, 12%, 44%);
+}
+.darkmode.ltxt {
+    color: hsl(228, 34%, 66%);
+}
+.darkmode.dtxt {
+    color: hsl(0, 0%, 100%);
+}
+.darkmode.grad{
+    background: linear-gradient(to right, hsl(210, 78%, 56%), hsl(146, 68%, 55%));
+}
+
+
+
+/* end of mode customisation */
+.heading {
+    border-radius: 0 0 27px 27px;
+    font-size: larger;
+}
+
+.heading-text {
+    padding-bottom: 1.5rem;
+    margin-bottom: 1.2rem;
+    border-bottom: solid 1px hsl(228, 12%, 44%);
+}
+
+.mode-switcher {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 7rem;
+}
+
+.mode-toggle {
+    
+    width: 55px;
+    height: 30px;
+    border-radius: 100px;
+    display: flex;
+    position: relative;
+    cursor: pointer;
+
+}
+
+
+
+
+.mode-toggle .switch {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    align-self: center;
+    justify-self: end;
+    position: absolute;
+    transition: all 400ms ease-in-out;
+}
+
+.lightmode .switch {
+    left: 6px;
+}
+
+.darkmode .switch {
+    left: 29px;
+}
+
+
+.big-cards {
+    margin-top: -90px;
+}
+
+.card {
+    text-align: center;
+    border-radius: 6px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 2rem 2rem 1.3rem;
+    margin-bottom: 20px;
+}
+
+.facebook {
+    border-top: solid 5px hsl(195, 100%, 50%);
+}
+.twitter {
+    border-top: solid 5px hsl(203, 89%, 53%);
+}
+.instagram {
+    border-width: 5px;
+    border-style: solid;
+    border-image: linear-gradient(to right,hsl(37, 97%, 70%), hsl(329, 70%, 58%)) 1 0 0 ;
+}
+.youtube {
+    border-top: solid 5px hsl(348, 97%, 39%);
+}
+
+.user  {
+    display: inline-flex;
+    margin: auto;
+    align-items: center;
+
+}
+
+.user span {
+    
+    padding: 0 0 0 3px;
+}
+
+.card .number {
+    font-size: 70px;
+    display: inline-block;
+    
+}
+
+.followers {
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    margin-top: -20px;
+    font-weight: 100;
+    margin-bottom: 20px;
+}
+
+.card .amount {
+    display: inline-flex;
+    margin: auto;
+    align-items: center;
+}
+
+.amount span {
+    
+    padding: 0 0 0 9px;
+}
+
+/* mini cards */
+
+section.overview.contained {
+    padding-top: 0;
+}
+
+.overview h2 {
+    margin-bottom: 30px;
+}
+
+.mini-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: yellow;
+    padding: 1rem 2rem;
+    border-radius: 7px;
+    margin-bottom: 10px;
+}
+
+.mini-card .top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0;
+    margin-bottom: 1rem;
+}
+
+.mini-card .bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.mini-card .number {
+    font-size: 34px;
+    
+    
+}
+
+.mini-card .amount {
+    display: flex;
+    align-items: center;
+}
+
+.mini-card .amount span {
+    
+    padding: 0 0 0 4px;
+}
+
+/* hover state */
+
+/* light */
+.card.lightmode.cardbg:hover,
+.mini-card.lightmode.cardbg:hover {
+    background-color: rgb(214, 216, 226);
+}
+
+/* dark */
+.card.darkmode.cardbg:hover,
+.mini-card.darkmode.cardbg:hover {
+    background-color: hsl(232, 19%, 15%);
+}
+
+/* all hover animation */
+.card.lightmode.cardbg,
+.mini-card.lightmode.cardbg,
+.card.darkmode.cardbg,
+.mini-card.darkmode.cardbg {
+    transition: all 300ms ease-in-out;
+}
+
+

@@ -1,0 +1,1 @@
+Beginner code I wrote when learning javascript. I just felt like uploading to git
